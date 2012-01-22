@@ -74,14 +74,15 @@ RBButton.prototype = {
     },
     
     refresh: function (){
-	
 	for(let i=0;i<this.apis.length;++i){
 	    this.apis[i].refresh();
 	}
-	Mainloop.timeout_add_seconds(this._settings.getRefresh(),
+
+	Mainloop.timeout_add_seconds(this.settings.getRefresh(),
 				     Lang.bind(this, function() {
 					 this.refresh();
 				     }));
+				    
     },
     toggleNotifications : function (item, event) {
 	this.settings.set_notifications(item.state);

@@ -52,6 +52,6 @@ RBSettings.prototype = {
 	return this._branch;
     },
     getRefresh: function (){
-	return 60;
+	return 30;
     }
 };
