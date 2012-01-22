@@ -1,0 +1,7 @@
+{
+    "shell-version": ["3.2.2.1"],
+    "uuid": "rbindicator@comandrei.gmail.com",
+    "name": "RBIndicator",
+    "description": "Integrates Reviewboard significant notifications in your Gnome-Shell",
+    "url" : "http://bitbucket.org/acoman/rbindicator"
+}

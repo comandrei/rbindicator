@@ -1,0 +1,29 @@
+<schemalist gettext-domain="gnome-shell-extension-rbindicator">
+   <schema id="org.gnome.shell.extensions.rbindicator" path="/org/gnome/shell/extensions/rbindicator/">
+    <key name="url" type="s">
+      <default>'http://demo.reviewboard.org/'</default>
+      <summary>Reviewboard URL</summary>
+      <description>Choose the URL for the Reviewboard installation</description>
+    </key>
+    <key name="username" type="s">
+      <default>''</default>
+      <summary>Username</summary>
+      <description>Set the user you want to watch My Reviews.</description>
+    </key>
+    <key name="password" type="s">
+      <default>''</default>
+      <summary>Password </summary>
+      <description>Password for your account.</description>
+    </key>
+    <key name="notifications" type="b">
+      <default>true</default>
+      <summary>Whether to notify you on new reviews.</summary>
+      <description>Toggles notifications.</description>
+    </key>
+    <key name="branch" type="s">
+      <default>''</default>
+      <summary>The branch to watch</summary>
+      <description>Choose the branch name you wish to receive notifications for. Leave blank for watching all branches.</description>
+    </key>
+  </schema>
+</schemalist>
