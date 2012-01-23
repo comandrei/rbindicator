@@ -25,5 +25,10 @@
       <summary>The branch to watch</summary>
       <description>Choose the branch name you wish to receive notifications for. Leave blank for watching all branches.</description>
     </key>
+    <key name="refresh" type="s">
+      <default>'60'</default>
+      <summary>Timeout when pooling for updates from server </summary>
+      <description>Timeout (in seconds) refreshing reviews </description>
+    </key>
   </schema>
 </schemalist>

@@ -7,6 +7,7 @@ const RB_USER = "username";
 const RB_PASS = "password";
 const RB_NOTIFY = "notifications"
 const RB_BRANCH = "branch";
+const RB_INTERVAL = "refresh";
 
 function RBSettings(){
     this._init();
@@ -30,6 +31,7 @@ RBSettings.prototype = {
 	this._password = this._settings.get_string(RB_PASS);
 	this._notifications = this._settings.get_boolean(RB_NOTIFY);
 	this._branch = this._settings.get_string(RB_BRANCH);
+	this._refresh = this._settings.get_string(RB_INTERVAL);
     },
     _watch: function(setting) {
 	this._settings.connect('changed::'+setting, this._loadSettings);
@@ -52,6 +54,6 @@ RBSettings.prototype = {
 	return this._branch;
     },
     getRefresh: function (){
-	return 30;
+	return this._refresh;
     }
 };
