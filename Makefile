@@ -9,7 +9,8 @@ install:
 	mkdir -p $(EXT_DIR)
 	cp src/* $(EXT_DIR)
 	cp $(SCHEMA) $(SCHEMA_DIR)
-	cp icons/rb.png /usr/share/icons/gnome/16x16/rb.png
-	cp icons/rb-mod.png /usr/share/icons/gnome/16x16/rb-mod.png
+	cp icons/rb.png /usr/share/icons/gnome/16x16/apps/rb.png
+	cp icons/rb-mod.png /usr/share/icons/gnome/16x16/apps/rb-mod.png
+	gtk-update-icon-cache -f /usr/share/icons/gnome/
 
 
